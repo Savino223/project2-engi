@@ -1,0 +1,25 @@
+.my-button {
+    min-width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    font-size: 18px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.my-button:hover {
+    background-color: #048b04;
+}
+
+.my-button--primary {
+    border: none;
+    color: white;
+    background-color: #06b106;
+}
+
+.my-button--bordered {
+    border: 1px solid #06b106;
+    color: #06b106;
+    background-color: none;
+}
