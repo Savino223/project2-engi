@@ -1,16 +1,23 @@
+import { useState } from "react";
 import "./index.css";
 
-function Inputs(props) {
+function Input(props) {
   const {
-    variant = "usual", 
-    label,
-    type = "text", 
-    placeholder,
-    value,
-    onChange,
+    type = "text",
+    variant = "usual",
+    placeholder = "Enter name",
+    defaultValue = "",
     disabled = false,
-    danger = false, 
+    label = "",
+    danger = false,
   } = props;
+
+  const [value, setValue] = useState(defaultValue);
+
+  const handleChange = (e) => {
+    setValue(e.target.value);
+    console.log("value changed")
+  };
 
   const classes = `inputator inputator--${danger ? "danger" : variant}`;
   const upper_classes = `inputer-upper inputer-upper--${danger ? "danger" : variant}`;
@@ -19,15 +26,16 @@ function Inputs(props) {
     <div className="inputer">
       {label && <label className={upper_classes}>{label}</label>}
       <input
-        type={type}
         className={classes}
+        type={type}
         placeholder={placeholder}
         value={value}
-        onChange={onChange}
+        onChange={handleChange}
         disabled={disabled}
+        variant={variant}
       />
     </div>
   );
 }
 
-export default Inputs;
+export default Input;
