@@ -2,32 +2,32 @@
     border-radius: 8px;
     cursor: pointer;
 
-    font-size: 18px;
+    font-size: 16px;
     transition: background-color 200ms ease-in-out;
+    margin: 5px;
 }
 
 .my-button--primary {
     border: none;
     color: white;
-    background-color: #06b106;
+    background-color: #006FEE;
 }
 
 .my-button--primary:hover {
-    background-color: white;
-    color:#06b106;
-    border: 1px solid #06b106;
+    background-color: #024694;
+    border: 1px solid #006FEE;
 }
 
 .my-button--bordered {
-    border: 1px solid #06b106;
-    color: #06b106;
+    border: 1px solid #006FEE;
+    color: #006FEE;
     background-color: white;
 }
 
 .my-button--bordered:hover {
     border: none;
     color: white;
-    background-color: #06b106;
+    background-color: #006FEE;
 }
 
 .my-button--medium {
