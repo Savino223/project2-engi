@@ -2,7 +2,8 @@ import Button from "./components/buttton/index.jsx";
 import Input from "./components/input/index.jsx";
 import Typography from "./components/typography/index.jsx";
 import Header from "./components/headers/index.jsx";
-import Tooltip from "./components/tooltip/index.jsx"; // Adjust path as necessary
+import Tooltip from "./components/tooltip/index.jsx"; 
+import Accordion from "./components/accordion/index.jsx";
 
 
 function App() {
@@ -70,6 +71,15 @@ function App() {
       <br></br>
       <br></br>
       <h2>Accordion task</h2>
+
+      <div className="accordion-holders">
+        <Accordion title="Accordion" defaultOpen>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </Accordion>
+      </div>
 
     </div>
   );
