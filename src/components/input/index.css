@@ -1,60 +1,59 @@
 .inputer {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-    width: 300px;
-    height: 60px;
-    gap: 4px;
-  }
-  
-  .inputator {
-    border-radius: 5px;
-    padding: 8px 12px;
-    font-size: 16px;
-  }
-  
-  .inputator:focus {
-    border-color: black; 
-    outline: none;
-  }
-  
-  .inputator::placeholder {
-    font-size: 14px;
-    color: black;
-  }
-  
-  .inputer-upper {
-    font-size: 12px;
-    margin-bottom: 3px;
-  }
-  
-  .inputator--blue {
-    border: 1px solid #006FEE;
-  }
-  
-  .inputer-upper--blue {
-    color: #006FEE;
-  }
-  
-  .inputator--danger {
-    border: 1px solid red;
-    color: red;
-  }
-  
-  .inputator--danger::placeholder {
-    color: red;
-  }
-  
-  .inputer-upper--danger {
-    color: red;
-  }
-  
-  .inputator:disabled {
-    background-color: white;
-    border-color: #ccc;
-    cursor: not-allowed;
-  }
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 300px;
+  height: 60px;
+  gap: 4px;
+  border-radius: 5px;
+}
 
-  .input_holders {
-    margin: 10px;
-  }
+.inputator {
+  border: 1px solid lightgrey; 
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  transition: border-color 0.2s; 
+}
+
+.inputator:focus {
+  border-color: #006FEE; 
+  outline: none;
+}
+
+.inputer:focus-within .inputer-upper {
+  color: #006FEE;
+}
+
+.inputator::placeholder {
+  font-size: 14px;
+  color: black;
+}
+
+.inputer-upper {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.inputator--danger:focus {
+  border: 1px solid red;
+  color: red;
+}
+
+.inputator--danger:focus::placeholder {
+  color: red;
+}
+
+.inputer:focus-within .inputer-upper--danger {
+  color: red;
+}
+
+.inputator:disabled {
+  background-color: white;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.input_holders {
+  margin: 10px;
+}
