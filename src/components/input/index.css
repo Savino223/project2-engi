@@ -9,11 +9,13 @@
 }
 
 .inputator {
-  border: 1px solid lightgrey; 
-  border-radius: 5px;
-  padding: 8px 12px;
+  border: 1px solid #E4E4E7; 
+  border-radius: 8px;
+  padding: 8px 10px;
   font-size: 16px;
   transition: border-color 0.2s; 
+  width: 300px;
+  height: 40px;
 }
 
 .inputator:focus {
@@ -26,7 +28,7 @@
 }
 
 .inputator::placeholder {
-  font-size: 14px;
+  font-size: 16px;
   color: black;
 }
 
@@ -55,5 +57,5 @@
 }
 
 .input_holders {
-  margin: 10px;
+  Gap: 20px;
 }
